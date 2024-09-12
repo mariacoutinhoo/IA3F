@@ -6,15 +6,27 @@ const caixaResultado = document.querySelector('.caixa-resultado');
 const perguntas = [
     {
         enunciado: "Você faz uso da Inteligência Artificial?",
-        alternativas: ["Alternativa 1","Alternativa 2"]
+        alternativas: ["Sim","Não"]
     },
     {
         enunciado: "Você acha que as pessoas estão se tornando dependentes da Inteligência Artificial?",
-        alternativas: ["Alternativa 1","Alternativa 2"]
+        alternativas: ["Sim","Não"]
     },
     {
-        enunciado: "Pergunta 3",
-        alternativas: ["Alternativa 1","Alternativa 2"]
+        enunciado: "Os robôs podem operar sem supervisão humana graças à Inteligência Artificial?",
+        alternativas: ["Sim","Não"]
+    },
+    {
+        enunciado: "A Inteligência Artificial é capaz de compreender as emoções humanas?",
+        alternativas: ["Sim","Não"]
+    },
+    {
+        enunciado: "A Inteligência Artificial pode reconhecer rostos?",
+        alternativas: ["Sim","Não"]
+    },
+    {
+        enunciado: "A Inteligência Artificial pode ouvir comandos de voz?",
+        alternativas: ["Sim","Não"]
     }
 ]
 
