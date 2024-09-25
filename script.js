@@ -6,27 +6,57 @@ const caixaResultado = document.querySelector('.caixa-resultado');
 const perguntas = [
     {
         enunciado: "Você faz uso da Inteligência Artificial?",
-        alternativas: ["Sim","Não"]
+        alternativas: [
+            {texto: "Sim",
+            afirmação: "Afirmação da alternativa"},
+            
+            {texto: "Não",
+            afirmação: "Afirmação da alternativa"}]
     },
     {
         enunciado: "Você acha que as pessoas estão se tornando dependentes da Inteligência Artificial?",
-        alternativas: ["Sim","Não"]
+        alternativas: [
+            {texto: "Sim",
+            afirmação: "Afirmação da alternativa"},
+                
+            {texto: "Não",
+            afirmação: "Afirmação da alternativa"}]
     },
     {
         enunciado: "Os robôs podem operar sem supervisão humana graças à Inteligência Artificial?",
-        alternativas: ["Sim","Não"]
+        alternativas: [
+            {texto: "Sim",
+            afirmação: "Afirmação da alternativa"},
+
+            {texto: "Não",
+            afirmação: "Afirmação da alternativa"}]
     },
     {
         enunciado: "A Inteligência Artificial é capaz de compreender as emoções humanas?",
-        alternativas: ["Sim","Não"]
+        alternativas: [
+            {texto: "Sim",
+            afirmação: "Afirmação da alternativa"},
+            
+            {texto: "Não",
+            afirmação: "Afirmação da alternativa"},]
     },
     {
         enunciado: "A Inteligência Artificial pode reconhecer rostos?",
-        alternativas: ["Sim","Não"]
+        alternativas: [
+            {texto: "Sim",
+            afirmação: "Afirmação da alternativa"},
+            
+            {texto: "Não",
+            afirmação: "Afirmação da alternativa"},]
     },
     {
         enunciado: "A Inteligência Artificial pode ouvir comandos de voz?",
-        alternativas: ["Sim","Não"]
+        alternativas: [
+            {texto: "Sim",
+            afirmação: "Afirmação da alternativa"},
+            
+            {texto: "Não",
+            afirmação: "Afirmação da alternativa"},]
     }
 ]
 

@@ -1,7 +1,7 @@
 :root{
-    --cor-fundo: #ddddee;
-    --cor-principal: #4682B4;
-    --cor-secundaria: #87CEEB;
+    --cor-fundo: #384685;
+    --cor-principal: #2a475e;
+    --cor-secundaria: #11546e;
     --cor-destaque: #B0C4DE;
     --cor-texto: #000000;
 }
@@ -17,5 +17,9 @@ body{
     background-color: var(--cor-fundo);
     width:90%;
     max-width: 600px;
-
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    color: var(--cor-destaque)
 }
