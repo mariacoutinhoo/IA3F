@@ -8,46 +8,46 @@ const perguntas = [
         enunciado: "Você faz uso da Inteligência Artificial?",
         alternativas: [
             {texto: "Sim",
-            afirmação: "Afirmação da alternativa"},
+            afirmação: "Faço o uso da Inteligência Artificial."},
             
             {texto: "Não",
-            afirmação: "Afirmação da alternativa"}]
+            afirmação: "Naço o uso da Inteligência Artificial."}]
     },
     {
         enunciado: "Você acha que as pessoas estão se tornando dependentes da Inteligência Artificial?",
         alternativas: [
             {texto: "Sim",
-            afirmação: "Afirmação da alternativa"},
+            afirmação: "Acredito que as pessoas estão se tornando dependentes da Inteligência Artificial."},
                 
             {texto: "Não",
-            afirmação: "Afirmação da alternativa"}]
+            afirmação: "Não acredito que as pessoas estão se tornando dependentes da Inteligência Artificial."}]
     },
     {
         enunciado: "Os robôs podem operar sem supervisão humana graças à Inteligência Artificial?",
         alternativas: [
             {texto: "Sim",
-            afirmação: "Afirmação da alternativa"},
+            afirmação: "Acredito que os robôs podem operar sem supervisão humana graças à Inteligência Artificial."},
 
             {texto: "Não",
-            afirmação: "Afirmação da alternativa"}]
+            afirmação: "Os robôs não podem operar sem supervisão humana graças à Inteligência Artificial."}]
     },
     {
         enunciado: "A Inteligência Artificial é capaz de compreender as emoções humanas?",
         alternativas: [
             {texto: "Sim",
-            afirmação: "Afirmação da alternativa"},
+            afirmação: "Acredito que a Inteligência Artificial é capaz de compreender as emoções humanas."},
             
             {texto: "Não",
-            afirmação: "Afirmação da alternativa"},]
+            afirmação: "A Inteligência Artificial não é capaz de compreender as emoções humanas."},]
     },
     {
         enunciado: "A Inteligência Artificial pode reconhecer rostos?",
         alternativas: [
             {texto: "Sim",
-            afirmação: "Afirmação da alternativa"},
+            afirmação: "A Inteligência Artificial pode reconhecer rostos."},
             
             {texto: "Não",
-            afirmação: "Afirmação da alternativa"},]
+            afirmação: "A Inteligência Artificial não pode reconhecer rostos."},]
     },
     {
         enunciado: "A Inteligência Artificial pode ouvir comandos de voz?",
@@ -65,8 +65,13 @@ let perguntaAtual;
 lethistoriaFinal = "";
 
 function mostraPergunta(){
+    if (posicao >= perguntas.length){
+        mostraResultado();
+        return;
+    }
     perguntaAtual = perguntas[posicao];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
     mostraAlternativas();
 }
 function mostraAlternativas(){
@@ -82,6 +87,13 @@ function respostaSelecionada(opcaoSelecionada){
     historiaFinal = afirmacoes;
     posicao++;
     mostraPergunta();
+
+}
+function mostraResultado(){
+    caixaPerguntas.textContent = "Atualmente...";
+    textoresulttado.textContent = historiaFinal;
+    caixaAlternativas
+
 }
 
 mostraPergunta();
